@@ -578,6 +578,27 @@ h3,
     vertical-align: super;
 }
 
+/* Badge Positioning */
+.offer-top-badge {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    background: linear-gradient(135deg, #FB8500, #FFB703);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-family: 'Fredoka', cursive;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 20px rgba(251, 133, 0, 0.3);
+    z-index: 10;
+    white-space: nowrap;
+}
+
 .offer-divider { 
     height: 3px; 
     border-top: 2px dashed #E5E7EB;
