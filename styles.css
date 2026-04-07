@@ -483,46 +483,72 @@ h3,
 
 /* Purchase Card */
 /* Modern Purchase Card Upgrade */
-.offer-card-premium {
-    background: #FFF;
-    border-radius: 40px;
-    padding: 45px 24px;
-    position: relative;
-    border: 1px solid #E5E7EB;
-    box-shadow: 0 0 0 8px #F9FAFB, 0 30px 60px rgba(0,0,0,0.08); /* Double border effect */
-}
-
-.offer-top-badge {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(135deg, #FB8500, #FFB703);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 50px;
-    font-family: 'Fredoka', cursive;
-    font-weight: 700;
-    font-size: 0.9rem;
-    box-shadow: 0 8px 20px rgba(251, 133, 0, 0.3);
-    z-index: 10;
-}
-
-.offer-header h3 { font-size: 2rem; color: #1F2937; margin-bottom: 5px; }
-.offer-header p { font-weight: 600; color: #6B7280; font-size: 0.95rem; }
-
-.price-box { 
-    margin: 35px 0; 
+.pricing-grid {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
-.price-header-info {
+.offer-card {
+    background: #FFF;
+    border-radius: 40px;
+    padding: 40px 24px;
+    position: relative;
+    border: 2px solid #E5E7EB;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Premium Card Enhancements */
+.offer-card.premium-top {
+    border-color: var(--primary);
+    background: linear-gradient(to bottom, #FFFFFF, #FFFBFB);
+    padding-top: 50px;
+}
+
+.offer-card.premium-top::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    z-index: -1;
+    border-radius: 46px;
+    opacity: 0.2;
+}
+
+/* Basic Card - Full Card Style */
+.offer-card.basic-card-full {
+    background: #F9FAFB;
+    border: 3px dashed #D1D5DB;
+    box-shadow: none;
+    padding: 30px 24px;
+}
+
+.basic-title {
+    font-family: 'Fredoka', cursive;
+    color: var(--text-dark);
+}
+
+.premium-title {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.premium-subtitle {
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.price-box { 
+    margin: 15px 0; 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 15px;
 }
 
 .old-price { 
@@ -532,16 +558,6 @@ h3,
     font-size: 0.95rem; 
 }
 
-.vitalicio-badge {
-    background: #E0F2FE;
-    color: #0369A1;
-    font-size: 0.7rem;
-    font-weight: 800;
-    padding: 2px 8px;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-}
-
 .main-price {
     display: flex;
     justify-content: center;
@@ -549,34 +565,90 @@ h3,
     gap: 4px;
 }
 
-.main-price .currency {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-top: 15px;
-    color: #1F2937;
-}
-
 .main-price .value {
-    font-size: 7.5rem;
+    font-size: 6rem;
     font-family: 'Fredoka', cursive;
     color: var(--primary);
-    line-height: 0.75;
+    line-height: 0.8;
     font-weight: 700;
 }
 
 .main-price .value span {
-    font-size: 2.5rem;
+    font-size: 2rem;
     vertical-align: super;
 }
 
-.offer-divider { height: 2px; background: #F3F4F6; margin: 35px auto; width: 60%; border-radius: 2px; }
+.offer-divider { 
+    height: 3px; 
+    border-top: 2px dashed #E5E7EB;
+    margin: 25px auto; 
+    width: 80%; 
+}
+
+/* WA Bonus Square - GREEN BOX */
+.wa-bonus-square {
+    background: #DCFCE7;
+    border: 3px solid #22C55E;
+    border-radius: 24px;
+    padding: 25px 20px;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(34, 197, 94, 0.15);
+}
+
+.wa-bonus-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.wa-icon-box {
+    background: #22C55E;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.wa-bonus-header h4 {
+    font-family: 'Fredoka', cursive;
+    color: #166534;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.wa-bonus-square p {
+    font-size: 0.85rem;
+    color: #15803D;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.wa-bonus-tag {
+    background: #22C55E;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-family: 'Fredoka', cursive;
+}
 
 .offer-list-modern { 
     list-style: none; 
-    display: inline-block; /* Alinha o bloco ao centro */
+    display: inline-block;
     text-align: left; 
-    margin: 10px auto 40px;
+    margin: 0 auto 10px;
 }
+
 .offer-list-modern li { 
     display: flex; 
     align-items: center; 
@@ -590,13 +662,18 @@ h3,
 .check-icon {
     width: 28px;
     height: 28px;
-    background: #DCFCE7;
-    color: #166534;
+    background: #E5E7EB;
+    color: #6B7280;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+.check-icon.highlight {
+    background: var(--primary);
+    color: white;
 }
 
 .secure-checkout { text-align: center; width: 100%; display: block; font-size: 0.8rem; color: #9CA3AF; margin-top: 15px; font-weight: 600; }
