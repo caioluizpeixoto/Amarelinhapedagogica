@@ -17,83 +17,82 @@
         fbq('init', '1480284077046421');
         fbq('track', 'PageView');
     </script>
-
     <script>
         window.pixelId = "69d319402ee692599f082b0c";
         var a = document.createElement("script");
-        a.setAttribute("async", "");
-        a.setAttribute("defer", "");
+        a.setAttribute("async", ""); a.setAttribute("defer", "");
         a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
         document.head.appendChild(a);
     </script>
-
-    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
-        data-utmify-prevent-subids async defer></script>
-
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Amarelinha das Letras | Alfabetização Divertida</title>
-    <meta name="description"
-        content="Transforme a leitura em uma brincadeira ativa. O material perfeito para professores e pais que desejam acelerar a alfabetização com diversão.">
+    <meta name="description" content="Transforme a leitura em uma brincadeira ativa. O material perfeito para professores e pais que desejam acelerar a alfabetização com diversão.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Outfit:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://fast.wistia.com/player.js" async></script>
     <script src="https://fast.wistia.com/embed/ayjajib4um.js" async type="module"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 
 <body>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1480284077046421&ev=PageView&noscript=1" /></noscript>
-    <!-- Header Removido conforme solicitado -->
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1480284077046421&ev=PageView&noscript=1" /></noscript>
+
+    <!-- Top Bar Promoção -->
+    <div class="promo-bar">
+        🔥 Promoção válida apenas para hoje, <span id="promo-date"></span>
+    </div>
+    <script>
+        (function(){
+            var meses = ["01 de janeiro","02 de fevereiro","03 de março","04 de abril","05 de maio","06 de junho","07 de julho","08 de agosto","09 de setembro","10 de outubro","11 de novembro","12 de dezembro"];
+            var d = new Date();
+            var dia = String(d.getDate()).padStart(2,'0');
+            var mes = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"][d.getMonth()];
+            document.getElementById('promo-date').textContent = dia + ' de ' + mes;
+        })();
+    </script>
 
     <main>
         <!-- Hero Section -->
         <section class="hero bg-grid">
             <div class="container text-center">
-                <span class="badge">🔥 ACESSO VITALÍCIO LIBERADO</span>
                 <h1 class="hero-title">A Atividade que Transforma a Leitura em <span>Pura Brincadeira!</span></h1>
-                <p class="hero-subline">Com um método simples e prático, você cria uma atividade envolvente, resistente
-                    e fácil de guardar — perfeita para casa ou sala de aula.</p>
+                <p class="hero-subline">Com um método simples e prático, você cria uma atividade envolvente, resistente e fácil de guardar — perfeita para casa ou sala de aula.</p>
 
                 <div class="hero-visual">
                     <div class="video-mockup">
                         <style>
                             wistia-player[media-id='ayjajib4um']:not(:defined) {
                                 background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/ayjajib4um/swatch');
-                                display: block;
-                                filter: blur(5px);
-                                padding-top: 177.78%;
+                                display: block; filter: blur(5px); padding-top: 177.78%;
                             }
                         </style>
                         <wistia-player media-id="ayjajib4um" aspect="0.5625"></wistia-player>
                     </div>
                 </div>
 
-                <a href="#purchase" id="hero-cta" class="btn btn-lg btn-primary btn-bounce">QUERO TER ACESSO AGORA</a>
+                <a href="#purchase" class="btn btn-hero">QUERO TER ACESSO AGORA</a>
                 <p class="cta-trust">✅ Acesso instantâneo no seu e-mail</p>
             </div>
         </section>
 
-        <!-- Seção Problema/Solução -->
+        <!-- Problema / Solução -->
         <section class="problem-solution container">
             <div class="card-problem">
                 <h3>Por que as crianças perdem o interesse? 📉</h3>
                 <ul>
-                    <li>❌ Ficam entediadas muito rápido</li>
-                    <li>❌ Atividades no papel não prendem a atenção</li>
-                    <li>❌ Dificuldade de manter o foco por muito tempo</li>
-                    <li>❌ O aprendizado não fixa de forma natural</li>
+                    <li><span class="x-icon">❌</span> Ficam entediadas muito rápido</li>
+                    <li><span class="x-icon">❌</span> Atividades no papel não prendem a atenção</li>
+                    <li><span class="x-icon">❌</span> Dificuldade de manter o foco por muito tempo</li>
+                    <li><span class="x-icon">❌</span> O aprendizado não fixa de forma natural</li>
                 </ul>
             </div>
-
             <div class="card-solution">
                 <h2>Agora Imagine o Método em Ação... 🌟</h2>
-                <p>O material pronto para ser aplicado. A criança aprende pulando, formando palavras e se conectando com
-                    as letras de forma totalmente pedagógica. Um aprendizado leve, direto e sem esforço forçado!</p>
+                <p>O material pronto para ser aplicado. A criança aprende pulando, formando palavras e se conectando com as letras de forma totalmente pedagógica. Um aprendizado leve, direto e sem esforço forçado!</p>
             </div>
         </section>
 
@@ -103,28 +102,36 @@
                 <h2 class="section-title">O que torna a Amarelinha Única? 🚀</h2>
                 <div class="benefits-grid">
                     <div class="benefit-item">
-                        <div class="icon-wrap">📖</div>
+                        <div class="icon-wrap icon-book">
+                            <i data-lucide="book-open"></i>
+                        </div>
                         <div class="benefit-text">
                             <h4>Alfabetização Ativa</h4>
                             <p>Estimula a leitura de forma natural e lúdica através do movimento.</p>
                         </div>
                     </div>
                     <div class="benefit-item">
-                        <div class="icon-wrap">🏃</div>
+                        <div class="icon-wrap icon-move">
+                            <i data-lucide="activity"></i>
+                        </div>
                         <div class="benefit-text">
                             <h4>Coordenação Motora</h4>
                             <p>Trabalha o equilíbrio e o foco enquanto a criança aprende as letras.</p>
                         </div>
                     </div>
                     <div class="benefit-item">
-                        <div class="icon-wrap">♻️</div>
+                        <div class="icon-wrap icon-print">
+                            <i data-lucide="printer"></i>
+                        </div>
                         <div class="benefit-text">
                             <h4>Material Ilimitado</h4>
                             <p>Receba no e-mail e imprima quantas vezes quiser para toda a turma.</p>
                         </div>
                     </div>
                     <div class="benefit-item">
-                        <div class="icon-wrap">💡</div>
+                        <div class="icon-wrap icon-coin">
+                            <i data-lucide="coins"></i>
+                        </div>
                         <div class="benefit-text">
                             <h4>Baixo Custo</h4>
                             <p>Atividade completa usando apenas papel e criatividade.</p>
@@ -132,7 +139,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-2">
-                    <a href="#purchase" class="btn btn-md btn-secondary btn-shine">SIM! EU QUERO ESSES BENEFÍCIOS</a>
+                    <a href="#purchase" class="btn btn-secondary btn-shine">SIM! EU QUERO ESSES BENEFÍCIOS</a>
                 </div>
             </div>
         </section>
@@ -154,38 +161,41 @@
             </div>
         </section>
 
-
         <!-- Como funciona -->
         <section class="how-it-works container section-padding">
             <h2 class="section-title">Como começar agora?</h2>
             <div class="step-stack">
                 <div class="step-card">
-                    <div class="step-icon">📧</div>
+                    <div class="step-icon-wrap bg-blue">
+                        <i data-lucide="mail"></i>
+                    </div>
                     <div class="step-content">
                         <h3>Receba em seu E-mail</h3>
                         <p>O acesso é imediato após o pagamento. O arquivo PDF chega pronto na sua caixa de entrada.</p>
                     </div>
                 </div>
                 <div class="step-card">
-                    <div class="step-icon">🖨️</div>
+                    <div class="step-icon-wrap bg-orange">
+                        <i data-lucide="printer"></i>
+                    </div>
                     <div class="step-content">
                         <h3>Imprima o Material</h3>
-                        <p>O material é seu! Imprima quantas cópias forem necessárias, sem limites para toda a turma.
-                        </p>
+                        <p>O material é seu! Imprima quantas cópias forem necessárias, sem limites para toda a turma.</p>
                     </div>
                 </div>
                 <div class="step-card">
-                    <div class="step-icon">🎓</div>
+                    <div class="step-icon-wrap bg-green">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
                     <div class="step-content">
                         <h3>Monte e Alfabetize Ativamente</h3>
-                        <p>Siga o guia pedagógico, monte sua amarelinha e transforme o aprendizado em uma experiência
-                            didática inesquecível.</p>
+                        <p>Siga o guia pedagógico, monte sua amarelinha e transforme o aprendizado em uma experiência inesquecível.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Feedbacks -->
+        <!-- Feedbacks / Carousel -->
         <section class="testimonials bg-green-soft">
             <div class="container section-padding">
                 <h2 class="section-title">Resultados que Apaixonam 💖</h2>
@@ -195,7 +205,7 @@
                         <div class="feed-img"><img src="assets/feedback2.png" alt="Feedback 2"></div>
                         <div class="feed-img"><img src="assets/feedback3.png" alt="Feedback 3"></div>
                         <div class="feed-img"><img src="assets/feedback4.png" alt="Feedback 4"></div>
-                        <!-- Duplicando para loop infinito -->
+                        <!-- Loop duplicates -->
                         <div class="feed-img"><img src="assets/feedback1.png" alt="Feedback 1"></div>
                         <div class="feed-img"><img src="assets/feedback2.png" alt="Feedback 2"></div>
                     </div>
@@ -203,19 +213,53 @@
             </div>
         </section>
 
-        <!-- Preço/Oferta -->
+        <!-- Preços -->
         <section id="purchase" class="purchase container section-padding">
             <h2 class="section-title">Escolha o seu Plano 🎓</h2>
-            
+
             <div class="pricing-grid">
-                <!-- CARD PREMIUM (O PRINCIPAL) -->
+                <!-- CARD BÁSICO (PRIMEIRO) -->
+                <div class="offer-card basic-card-full">
+                    <div class="offer-header text-center">
+                        <h3 class="basic-title">MATERIAL BÁSICO</h3>
+                        <p class="premium-subtitle">Apenas a Amarelinha</p>
+                    </div>
+
+                    <div class="price-box" style="margin: 15px 0;">
+                        <div class="main-price">
+                            <span class="currency" style="font-size:1.2rem;margin-top:5px;">R$</span>
+                            <span class="value" style="font-size:4rem;">9<span>,90</span></span>
+                        </div>
+                    </div>
+
+                    <ul class="offer-list-modern text-left" style="margin-bottom:20px;">
+                        <li>
+                            <span class="check-icon-sq"><i data-lucide="check" style="width:14px;height:14px;"></i></span>
+                            <span>Guia Pedagógico PDF</span>
+                        </li>
+                        <li>
+                            <span class="check-icon-sq"><i data-lucide="check" style="width:14px;height:14px;"></i></span>
+                            <span>Amarelinha Alfabética</span>
+                        </li>
+                        <li>
+                            <span class="check-icon-sq"><i data-lucide="check" style="width:14px;height:14px;"></i></span>
+                            <span>Amarelinha Numérica</span>
+                        </li>
+                    </ul>
+
+                    <div class="cta-wrap text-center">
+                        <a href="https://pay.wiapy.com/Ec6bs5hegA" class="btn btn-secondary" style="width:100%;">ACESSAR AGORA</a>
+                    </div>
+                </div>
+
+                <!-- CARD PREMIUM (SEGUNDO) -->
                 <div class="offer-card premium-top">
                     <div class="offer-top-badge pulse">MAIS ESCOLHIDO ⭐</div>
                     <div class="offer-header text-center">
                         <h3 class="premium-title">KIT PREMIUM COMPLETO</h3>
                         <p class="premium-subtitle">Acesso Vitalício + Todos os Bônus</p>
                     </div>
-                    
+
                     <div class="price-box">
                         <div class="price-header-info">
                             <span class="old-price">De R$ 97,00 por</span>
@@ -227,19 +271,36 @@
                     </div>
 
                     <div class="offer-divider"></div>
-                    
+
                     <ul class="offer-list-modern text-left">
-                        <li><span class="check-icon highlight">★</span> <span><b>TUDO</b> do Material Básico</span></li>
-                        <li><span class="check-icon highlight">★</span> <span>+150 Dinâmicas Ed. Infantil</span></li>
-                        <li><span class="check-icon highlight">★</span> <span>+20 Ativ. Coordenação Motora</span></li>
-                        <li><span class="check-icon highlight">★</span> <span>+30 Ativ. Família Silábica</span></li>
-                        <li><span class="check-icon highlight">★</span> <span>+40 Desafios com Amarelinha</span></li>
+                        <li>
+                            <span class="check-icon-sq highlight"><i data-lucide="star" style="width:14px;height:14px;"></i></span>
+                            <span><b>TUDO</b> do Material Básico</span>
+                        </li>
+                        <li>
+                            <span class="check-icon-sq highlight"><i data-lucide="star" style="width:14px;height:14px;"></i></span>
+                            <span>+150 Dinâmicas Ed. Infantil</span>
+                        </li>
+                        <li>
+                            <span class="check-icon-sq highlight"><i data-lucide="star" style="width:14px;height:14px;"></i></span>
+                            <span>+20 Ativ. Coordenação Motora</span>
+                        </li>
+                        <li>
+                            <span class="check-icon-sq highlight"><i data-lucide="star" style="width:14px;height:14px;"></i></span>
+                            <span>+30 Ativ. Família Silábica</span>
+                        </li>
+                        <li>
+                            <span class="check-icon-sq highlight"><i data-lucide="star" style="width:14px;height:14px;"></i></span>
+                            <span>+40 Desafios com Amarelinha</span>
+                        </li>
                     </ul>
 
-                    <!-- DESTAQUE WHATSAPP (QUADRADO VERDE) -->
+                    <!-- Bônus WhatsApp -->
                     <div class="wa-bonus-square">
                         <div class="wa-bonus-header">
-                            <span class="wa-icon-box">💬</span>
+                            <span class="wa-icon-box">
+                                <i data-lucide="message-circle" style="width:18px;height:18px;"></i>
+                            </span>
                             <h4>GRUPO VIP EXCLUSIVO</h4>
                         </div>
                         <p>Receba <b>Conteúdos Pedagógicos semanais GRATUITOS</b> e atualizações direto no seu celular!</p>
@@ -247,48 +308,20 @@
                     </div>
 
                     <div class="cta-wrap text-center mt-2">
-                        <a href="https://pay.wiapy.com/qiX_ecXULx" class="btn btn-lg btn-success pulse-glow">ACESSAR AGORA</a>
+                        <a href="https://pay.wiapy.com/qiX_ecXULx" class="btn btn-success pulse-glow">ACESSAR AGORA</a>
                         <p class="secure-checkout">🔒 Pagamento 100% seguro</p>
                     </div>
                 </div>
-
-                <!-- CARD BÁSICO (Card também) -->
-                <div class="offer-card basic-card-full">
-                    <div class="offer-header text-center">
-                        <h3 class="basic-title" style="font-size: 1.4rem;">MATERIAL BÁSICO</h3>
-                        <p class="premium-subtitle">Apenas a Amarelinha</p>
-                    </div>
-                    
-                    <div class="price-box" style="margin: 15px 0;">
-                        <div class="main-price">
-                            <span class="currency" style="font-size: 1.2rem; margin-top: 5px;">R$</span>
-                            <span class="value" style="font-size: 4rem;">9<span>,90</span></span>
-                        </div>
-                    </div>
-
-                    <ul class="offer-list-modern text-left" style="margin-bottom: 20px;">
-                        <li><span class="check-icon">✓</span> <span>Guia Pedagógico PDF</span></li>
-                        <li><span class="check-icon">✓</span> <span>Amarelinha Alfabética</span></li>
-                        <li><span class="check-icon">✓</span> <span>Amarelinha Numérica</span></li>
-                    </ul>
-
-                    <div class="cta-wrap text-center">
-                        <a href="https://pay.wiapy.com/Ec6bs5hegA" class="btn btn-md btn-secondary" style="width: 100%;">ACESSAR AGORA</a>
-                    </div>
-                </div>
-            </div>
             </div>
 
-            <!-- Garantia Section -->
+            <!-- Garantia -->
             <div class="guarantee-badge mt-2">
                 <div class="guarantee-img">
-                    <img src="https://facaseubebedormir.com.br/wp-content/uploads/2023/05/selo.gif"
-                        alt="Selo de 30 Dias de Garantia">
+                    <img src="https://facaseubebedormir.com.br/wp-content/uploads/2023/05/selo.gif" alt="Selo de 30 Dias de Garantia">
                 </div>
                 <div class="guarantee-text">
                     <h4>Garantia Incondicional de 30 Dias</h4>
-                    <p>Se você não ficar satisfeito com o material por qualquer motivo, devolvemos 100% do seu dinheiro
-                        sem perguntas.</p>
+                    <p>Se você não ficar satisfeito com o material por qualquer motivo, devolvemos 100% do seu dinheiro sem perguntas.</p>
                 </div>
             </div>
         </section>
@@ -315,7 +348,7 @@
         <!-- CTA Final -->
         <section class="final-cta text-center section-padding">
             <h2>Ensinar pode ser leve. Aprender deve ser divertido.</h2>
-            <a href="#purchase" class="btn btn-lg btn-primary">QUERO TER ACESSO AGORA</a>
+            <a href="#purchase" class="btn btn-primary btn-bounce">QUERO TER ACESSO AGORA</a>
         </section>
     </main>
 
@@ -323,7 +356,7 @@
         <p>&copy; 2024 Amarelinha das Letras | Todos os direitos reservados.</p>
     </footer>
 
+    <script>lucide.createIcons();</script>
     <script src="script.js"></script>
 </body>
-
 </html>

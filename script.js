@@ -44,45 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.head.append(style);
 
-    // 3. Fake Social Proof (Opcional - Notificações de Venda)
-    const showNotification = () => {
-        const names = ['Ana', 'Pedro', 'Carla', 'José', 'Maria', 'Soraia'];
-        const locations = ['São Paulo', 'Rio', 'Curitiba', 'Lisboa', 'Belo Horizonte'];
-        
-        const randomName = names[Math.floor(Math.random() * names.length)];
-        const randomLoc = locations[Math.floor(Math.random() * locations.length)];
-
-        const toast = document.createElement('div');
-        toast.className = 'sale-toast';
-        toast.innerHTML = `<div class="toast-content">🎉 <strong>${randomName}</strong> de ${randomLoc} acabou de adquirir a Amarelinha!</div>`;
-        document.body.appendChild(toast);
-
-        setTimeout(() => toast.classList.add('show'), 100);
-        setTimeout(() => {
-            toast.classList.remove('show');
-            setTimeout(() => toast.remove(), 500);
-        }, 4000);
-    };
-
-    // Estilo para o Toast
-    const toastStyle = document.createElement('style');
-    toastStyle.textContent = `
-        .sale-toast {
-            position: fixed; bottom: 20px; left: 20px; right: 20px;
-            background: white; padding: 15px; border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-left: 5px solid #FF4D4D;
-            z-index: 10000; transform: translateY(150%); transition: transform 0.5s ease;
-            font-size: 0.85rem; pointer-events: none;
-        }
-        .sale-toast.show { transform: translateY(0); }
-        .toast-content strong { color: #FF4D4D; }
-    `;
-    document.head.append(toastStyle);
-
-    // Inicia notificações a cada 15-30 segundos
-    setTimeout(showNotification, 5000);
-    setInterval(showNotification, 20000);
-    // 4. Controle do Carrossel de Feedbacks
+    // 3. Controle do Carrossel de Feedbacks
     const track = document.getElementById('feedback-track');
     if (track) {
         track.addEventListener('click', () => {
